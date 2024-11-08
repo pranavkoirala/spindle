@@ -1,29 +1,31 @@
-# Spindle
+# spindle
 
-Spindle is a unique platform designed for creating messages to the future. Each submission is stored with an identifier and an unlock time, allowing users to set messages that can only be viewed at a specified future date. Built with a minimalist approach, Spindle is developed using modern technologies to enhance user experience and privacy.
+spindle is a unique platform designed for creating messages to the future.
+similar to the idea of a time capsule, messages are set to be unlocked at a certain date and cannot be accessed until that date.
+nothing that can identify the creator of a message is logged.
 
-## Features
+## features
 
-- **Create Posts**: Submit a message with a future unlock date.
-- **Search Function**: Retrieve messages using unique identifiers.
-- **Privacy and Terms**: Messages are stored indefinitely without deletion options, emphasizing permanence and accountability.
+- **create posts**: submit a message with a future unlock date.
+- **search function**: retrieve messages using unique identifiers.
+- **privacy and terms**: messages are stored indefinitely without deletion options, emphasizing permanence and accountability.
 
-## Tech Stack
+## tech stack
 
-- **Frontend**: React with Vite and Tailwind CSS for styling.
-- **Backend**: Express.js and MongoDB for message storage.
-- **Fonts**: Noto Sans Mono and IBM Plex Mono for a sleek, monospaced aesthetic.
+- **frontend**: react with vite and tailwind css for styling.
+- **backend**: express.js and mongodb for message storage.
+- **fonts**: noto sans mono and ibm plex mono for a sleek, monospaced aesthetic.
 
-## Installation
+## installation
 
-1. Clone the repository:
+1. clone the repository:
 
    ````bash
    git clone https://github.com/your-username/spindle.git```
 
    ````
 
-2. Install Dependencies:
+2. install dependencies:
 
    ```bash
    cd spindle
@@ -31,18 +33,17 @@ Spindle is a unique platform designed for creating messages to the future. Each 
    cd client
    npm install
 
-
    cd server
    npm install
    ```
 
-   Make sure to create a .env file in the server directory.
+   make sure to create a .env file in the server directory.
 
    ```dotenv
-   MONGOURI=YOUR_MONGO_URI
+   mongouri=your_mongo_uri
    ```
 
-3. Run the development server:
+3. run the development server:
 
    ```bash
    cd client
