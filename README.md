@@ -20,10 +20,9 @@ nothing that can identify the creator of a message is logged.
 
 1. clone the repository:
 
-   ````bash
-   git clone https://github.com/your-username/spindle.git```
-
-   ````
+   ```bash
+   git clone https://github.com/your-username/spindle.git
+   ```
 
 2. install dependencies:
 
