@@ -10,17 +10,17 @@ const Sidebar = () => {
         <ul>
           <li className="p-4 hover:bg-[#f2f2f2] hover:text-black text-sm hover:cursor-pointer hover:rounded-xl">
             <Link to="/" className="block">
-              Home
+              home
             </Link>
           </li>
           <li className="p-4 hover:bg-[#f2f2f2] hover:text-black text-sm hover:cursor-pointer hover:rounded-xl">
             <Link to="/create-post" className="block">
-              Create Post
+              create post
             </Link>
           </li>
           <li className="p-4 hover:bg-[#f2f2f2] hover:text-black text-sm hover:cursor-pointer hover:rounded-xl">
             <Link to="/terms" className="block">
-              Terms
+              terms
             </Link>
           </li>
         </ul>

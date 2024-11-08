@@ -23,7 +23,7 @@ const Home = () => {
       </div>
       <div className="action-container flex justify-end">
         <button className="search-btn bg-[#191919] border border-gray-700 rounded-md p-2 text-xs mt-1 hover:bg-[#1f1f1f] hover:border-gray-700">
-          Search
+          search
         </button>
       </div>
     </div>
