@@ -4,7 +4,7 @@ const Terms = () => {
   return (
     <div className="terms-page px-8 py-4 text-gray-200">
       <p className="mb-4">
-        spindle is made with forgetfulness by{" "}
+        spindle is made with love by{" "}
         <a
           href="https://github.com/pranavkoirala"
           target="_blank"
