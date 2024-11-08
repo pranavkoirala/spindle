@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 app.use(
   cors({
-    origin: "https://spindleit.netlify.app/",
+    origin: "https://spindleit.netlify.app",
   })
 );
 app.use(express.json());
