@@ -6,7 +6,7 @@ const messageSchema = new mongoose.Schema({
     required: true,
   },
   unlockDate: {
-    type: Date,
+    type: Number,
     required: true,
   },
 });

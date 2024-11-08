@@ -3,11 +3,11 @@ import Message from "../models/Message.js";
 
 const router = express.Router();
 
-// POST: Create a new message with an unlock date
 router.post("/create", async (req, res) => {
-  const { message, unlockDate } = req.body;
+  const { message, unlockTime } = req.body;
   try {
-    const newMessage = new Message({ message, unlockDate });
+    const unixUnlockTime = Date.parse(unlockTime) / 1000;
+    const newMessage = new Message({ message, unlockDate: unixUnlockTime });
     await newMessage.save();
     res.status(201).json({ id: newMessage._id });
   } catch (error) {
@@ -21,7 +21,8 @@ router.get("/:id", async (req, res) => {
     if (!messageDoc)
       return res.status(404).json({ error: "Message not found" });
 
-    const isUnlocked = new Date() >= new Date(messageDoc.unlockDate);
+    const currentTime = Math.floor(Date.now() / 1000);
+    const isUnlocked = currentTime >= messageDoc.unlockDate;
     res.json(
       isUnlocked
         ? { message: messageDoc.message }
