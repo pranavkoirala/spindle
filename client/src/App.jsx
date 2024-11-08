@@ -3,6 +3,7 @@ import Sidebar from "./Components/Sidebar";
 import Home from "./pages/Home/Home";
 import CreatePost from "./pages/CreatePost/CreatePost";
 import Terms from "./pages/Terms/Terms";
+import Countdown from "./pages/Countdown/Countdown";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/create-post" element={<CreatePost />} />
             <Route path="/terms" element={<Terms />} />
+            <Route path="/countdown" element={<Countdown />} />
           </Routes>
         </div>
       </div>
