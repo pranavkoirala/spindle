@@ -4,7 +4,7 @@ const Terms = () => {
   return (
     <div className="terms-page px-8 py-4 text-gray-200">
       <p className="mb-4">
-        spindle is made with love by{" "}
+        spindle is made with forgetfulness by{" "}
         <a
           href="https://github.com/pranavkoirala"
           target="_blank"
@@ -19,12 +19,12 @@ const Terms = () => {
         </a>
       </p>
 
-      <h2 className="text-lg font-semibold mb-2">terms of submission</h2>
+      <h2 className="text-2xl font-semibold mb-2">terms of submission</h2>
       <p className="mb-4">
         by hitting the submit button, you acknowledge and agree to the
         following:
       </p>
-      <ul className="list-disc ml-6 space-y-2">
+      <ul className="list-disc ml-6 space-y-2 text-sm">
         <li>
           your submission will be automatically published in the spindle
           database
