@@ -42,6 +42,12 @@ const Terms = () => {
           spindle project
         </li>
       </ul>
+      <h2 className="text-2xl font-semibold mb-2">privacy policy</h2>
+      <p className="mb-4">
+        spindle does not store or log anything about you. i believe in 100%
+        anonymity and privacy. the only thing that is stored is the submission
+        you make.
+      </p>
     </div>
   );
 };
