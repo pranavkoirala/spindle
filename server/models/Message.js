@@ -9,6 +9,11 @@ const messageSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  messageId: {
+    type: String,
+    required: true,
+    unique: true,
+  },
 });
 
 const Message = mongoose.model("Message", messageSchema);
