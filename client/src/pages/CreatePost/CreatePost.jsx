@@ -37,7 +37,7 @@ const CreatePost = () => {
 
     try {
       const response = await fetch(
-        "https://spindle-gsgw.onrender.com//api/messages/create",
+        "https://spindle-gsgw.onrender.com/api/messages/create",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
