@@ -28,7 +28,7 @@ const Home = () => {
   };
 
   return (
-    <div className="home">
+    <div className="home max-w-4xl mx-auto">
       <img
         src="../logo.png"
         alt="spindle"
