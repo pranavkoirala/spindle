@@ -48,6 +48,10 @@ const Terms = () => {
         anonymity and privacy. the only thing that is stored is the submission
         you make.
       </p>
+      <p className="mb-4">i believe in 100% anonymity and privacy.</p>
+      <p className="mb-4">
+        the only thing that is stored is the submission you make.
+      </p>
     </div>
   );
 };
