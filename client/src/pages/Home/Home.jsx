@@ -53,8 +53,14 @@ const Home = () => {
           </div>
           <div className="action-container flex justify-end">
             <button
+              onClick={() => navigate("/create-post")}
+              className="justify-start redirect-btn bg-[#191919] border border-gray-700 rounded-md p-2 mr-4 text-xs mt-2 hover:bg-[#1f1f1f] hover:border-gray-700"
+            >
+              don&apos;t have one? make a post!
+            </button>
+            <button
               onClick={handleSearch}
-              className="search-btn bg-[#191919] border border-gray-700 rounded-md p-2 text-xs mt-1 hover:bg-[#1f1f1f] hover:border-gray-700"
+              className="search-btn bg-[#191919] border border-gray-700 rounded-md p-2 text-xs mt-2 hover:bg-[#1f1f1f] hover:border-gray-700"
             >
               search
             </button>
