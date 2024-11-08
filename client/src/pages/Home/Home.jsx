@@ -13,7 +13,7 @@ const Home = () => {
     if (!identifier) return;
     try {
       const response = await fetch(
-        `http://localhost:3000/api/messages/${identifier}`
+        `https://spindle-gsgw.onrender.com/api/messages/${identifier}`
       );
       const data = await response.json();
       if (data.message) {

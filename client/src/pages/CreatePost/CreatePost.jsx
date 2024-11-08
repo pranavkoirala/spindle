@@ -6,7 +6,7 @@ const CreatePost = () => {
   const [unlockTime, setUnlockTime] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
-  const [messageId, setMessageId] = useState(null); // Store ID separately
+  const [messageId, setMessageId] = useState(null);
 
   const handleInput = (event) => {
     setMessage(event.target.value);
@@ -37,7 +37,7 @@ const CreatePost = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:3000/api/messages/create",
+        "https://spindle-gsgw.onrender.com//api/messages/create",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
