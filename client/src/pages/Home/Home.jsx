@@ -33,6 +33,8 @@ const Home = () => {
         src="../logo.png"
         alt="spindle"
         className="max-w-40 w-full mx-auto -mt-20"
+        draggable="false"
+        style={{ pointerEvents: "none" }}
       />
       {!showMessage && (
         <>
