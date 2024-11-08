@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+import messageRoutes from "./routes/messageRoutes.js";
 
 dotenv.config();
 
@@ -16,6 +17,9 @@ mongoose
   })
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection error:", err));
+
+// Routes
+app.use("/api/messages", messageRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
