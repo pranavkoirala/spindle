@@ -1,0 +1,13 @@
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.bounce-on-click {
+  animation: bounce 0.3s ease;
+}
